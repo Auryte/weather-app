@@ -4,14 +4,14 @@ import {
     timeStampToHoursMinutes 
 } from '../utils/dateHelpers';
 
-const weatherApiKey = '381ae15ae7e6a3a41979a9906dcbd4d8';
+const weatherApiKey = process.env.REACT_APP_WEATHER_API_KEY;
 const weatherApi = axios.create({
     baseURL: 'https://api.openweathermap.org/data/2.5/',
     headers: { 'Content-type': 'application/json' }
 })
 //https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
-
-const locationApiKey = 'cd52b29ab5634489938bf1c477af7845';
+// const BASE_URL = process.env.REACT_APP_BASE_URL;
+const locationApiKey = process.env.REACT_APP_LOCATION_API_KEY;
 const locationApi = axios.create({
     baseURL: 'https://api.opencagedata.com/geocode/v1/',
     headers: { 'Content-type': 'application/json' }
@@ -35,6 +35,6 @@ export const getDailyWeatherByCityCountry = async ({ city, country }, success, f
         }));
        success(formatedDays)
    } catch (error) {
-       failure(error);;
+       failure(error);
    }
 }
