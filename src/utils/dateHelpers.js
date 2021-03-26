@@ -5,5 +5,9 @@ export const timeStampToWeekDay = (timestamp) => {
 }
 export const timeStampToHoursMinutes = (timestamp) => {
     const date = new Date(timestamp * 1000);
-    return `${date.getHours()}:${date.getMinutes()}`;
+    const minutes = date.getMinutes();
+    const minutesFormated = minutes < 10 ? '0'+ minutes : minutes
+
+    return `${date.getHours()}:${minutesFormated}`;
+
 }
