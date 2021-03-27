@@ -1,7 +1,7 @@
 .Card{
     background-color: rgba(255, 255, 255, 0.26);
     text-align: center;
-    min-height: 40vh;
+    min-height: 35vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,21 @@
 .Icon{
     font-size: 4rem;
 }
-
+.Sun{
+    width: 70px;
+    height: 70px;
+    filter: invert(100%);
+}
+.Cloud{
+    width: 70px;
+    height: 70px;
+    filter: invert(100%);
+}
+.CloudSun{
+    width: 70px;
+    height: 70px;
+    filter: invert(100%);
+}
 .SunMotionDiv{
     margin-top: 20px;
 }
