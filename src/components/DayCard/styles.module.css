@@ -1,0 +1,43 @@
+.Card{
+    background-color: rgba(255, 255, 255, 0.26);
+    text-align: center;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px grey;
+}
+.Temp{
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+.Icon{
+    font-size: 4rem;
+}
+
+.SunMotionDiv{
+    margin-top: 20px;
+}
+.SunRiseSet{
+    margin: 0;
+    padding: 0;
+}
+.Arrow45{
+    transform: rotate(45deg);
+    font-size: 2rem;
+}
+.Arrow135{
+    transform: rotate(135deg);
+    font-size: 2rem;
+}
+.Arrow225{
+    transform: rotate(225deg);
+    font-size: 2rem;
+}
+.Arrow315{
+    transform: rotate(315deg);
+    font-size: 2rem;
+}
