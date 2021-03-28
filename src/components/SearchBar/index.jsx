@@ -3,8 +3,6 @@ import styles from './styles.module.css'
 
 export default class SearchBar extends Component {
 
-
-
     render() {
 
         return (

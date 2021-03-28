@@ -1,0 +1,16 @@
+.Error{
+    width: 30%;
+    font-size: 2rem;
+    color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.335);
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+h5{
+    margin: 5px 0;
+    font-weight: 400;
+}
