@@ -4,7 +4,6 @@ import DayCard from './components/DayCard';
 import { getDailyWeatherByCityCountry } from './api';
 import SearchBar from './components/SearchBar';
 import Error from './components/Error';
-import { FaBeer } from 'react-icons/fa';
 
 export class App extends Component {
   state = {
@@ -40,7 +39,7 @@ export class App extends Component {
     this.setState({
       errMsg: null,
       cityHeader: "Weather in " + this.state.city.charAt(0).toUpperCase() + this.state.city.slice(1),
-      countryHeader: "," + this.state.country.charAt(0).toUpperCase() + this.state.country.slice(1),
+      countryHeader:",  " + this.state.country.charAt(0).toUpperCase() + this.state.country.slice(1),
       city: '',
       country: '',
     })
@@ -76,14 +75,16 @@ export class App extends Component {
           <form onSubmit={this.handleSubmit} className="styles.SearchForm">
 
             <SearchBar
-              placeholder="Enter City "
+              placeholder=" Enter City "
               type="text"
+              Name="city"
               setValue={value => this.setState({ city: value })}
               value={this.state.city}
             />
             <SearchBar
               placeholder="Enter Country"
               type="text"
+              Name="country"
               setValue={value => this.setState({ country: value })}
               value={this.state.country}
             />

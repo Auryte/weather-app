@@ -22,7 +22,7 @@ const locationApi = axios.create({
 
 export const getDailyWeatherByCityCountry = async ({ city, country }, success, failure) => {
     try {
-      const { data: locData } = await locationApi.get(`json?q=${country}, ${city}&key=${locationApiKey}`);
+      const { data: locData } = await locationApi.get(`json?q=${city}, ${country}&key=${locationApiKey}`);
       const { lat, lng } = locData.results[0].geometry;
       const { data: weatherData } = await weatherApi.get(`onecall?lat=${lat}&lon=${lng}&units=metric&exclude=hourly,alerts,current,minutely&appid=${weatherApiKey}`);
       const formatedDays = weatherData.daily.map(({ temp, clouds, dt, sunrise, sunset, wind_deg, wind_speed }) => ({
