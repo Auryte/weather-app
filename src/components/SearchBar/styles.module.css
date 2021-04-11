@@ -18,21 +18,31 @@
 .Icon{
 position: absolute;
 top: 20px;
-left: 50px;
+left: 30px;
 color: grey;
 }
+@media screen and (min-width: 500px) {
+    .Icon{
+        left: 50px;
+        }
+  }
 @media screen and (min-width: 700px) {
     .Icon{
         left: 30px;
         }
   }
-
+  @media screen and (min-width: 800px) {
+    .Icon{
+        left: 40px;
+        }
+  }
 @media screen and (min-width: 1000px) {
     .Icon{
         left: 40px;
         }
   }
-  @media screen and (min-width: 1200px) {
+ 
+  @media screen and (min-width: 1500px) {
     .Icon{
         left: 50px;
         }

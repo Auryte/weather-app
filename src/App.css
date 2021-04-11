@@ -11,7 +11,7 @@
   margin: 0;
   color: whitesmoke;
   font-weight: 700;
-  font-size: 2.5rem; 
+  font-size: 1.8rem; 
 }
 .locationHeaderContainer{
   min-height: 25px;
@@ -26,7 +26,7 @@
   background-image:  url(./utils/images/clouds.jpg);
   margin: 0;
   padding-bottom: 50px;
-  height: 100%;
+  min-height: 100vh - 50px;
   background-size: cover;
 }
 .SearchContainer{
@@ -55,6 +55,12 @@
 .SearchButton:hover{
   opacity: 0.7;
 }
+@media screen and (min-width: 500px) {
+  .AppHeader{
+        font-size: 2.5rem; 
+  }
+}
+
 @media screen and (min-width: 700px) {
   .AppGrid{
   grid-template-columns: repeat(2, 1fr);
